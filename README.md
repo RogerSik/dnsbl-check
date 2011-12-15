@@ -1,4 +1,4 @@
-Script that check if it your mail server in a DNSBL (DNS Mail Blacklist).
+Script that check if it your mail server in a <a href="http://en.wikipedia.org/wiki/DNSBL">DNSBL</a> (DNS Blackhole List).
 
 From <a href="http://www.heise.de/netze/artikel/Verdrehte-Abfrage-223890.html">heise Netze</a> added with little features thats come from the comments.
 
