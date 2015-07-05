@@ -10,7 +10,6 @@ MAIL_RCPT=""
 DNSBLlist=`grep -v ^# <<!
 rfc-ignorant.org
 cbl.abuseat.org
-ircbl.ahbl.org
 virbl.dnsbl.bit.nl
 blackholes.five-ten-sg.com
 dnsbl.inps.de
