@@ -5,7 +5,6 @@
 # By Damon Tajeddini (dta)
 # # 10.03.2009
 #
-MAIL_RCPT=""
 
 DNSBLlist=`grep -v ^# <<!
 rfc-ignorant.org
@@ -37,7 +36,7 @@ convertIP()
 
 usage()
 {
- echo "Usage: $0 [-H &lt;host&gt;|-p]"
+ echo "Usage: $0 [-H <host>|-p]"
  echo " -H IP address to check"
  echo " -p Print list of DNSBLs"
  exit 3
@@ -50,7 +49,8 @@ check()
  do
  if dig $ip_arpa.$i +short | grep -q "^127.0.0."
  then
- mail -s "** Service Alert: $ip found on $i **" $MAIL_RCPT <<!
+ echo "** Service Alert: $ip found on $i **"
+ echo <<!
  *** DNSBL WARNING ***
  Service: $progname
  Host: `hostname`
